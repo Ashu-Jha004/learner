@@ -9,7 +9,7 @@ const PostsList = async () => {
     return (
       <>
         <ul className=" grid auto-cols-auto">
-          {data.posts.map((post) => (
+          {data.posts.map((post: any) => (
             <li key={post.id} className="mb-3 grid auto-cols-auto ">
               <Link href={`/posts/${post.id}`}>{post.title}</Link>
             </li>
